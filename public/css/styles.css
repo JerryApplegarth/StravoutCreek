@@ -1,0 +1,171 @@
+@import url(http://fonts.googleapis.com/css2?family=Lato&display=swap);
+
+body {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.btn-first-section {
+	background: var(--clr-background-med);
+	color: var(--clr-a-text);
+	padding: 6px 12px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.btn-first-section:hover,
+.btn-first-section:focus {
+	color: var(--clr-a-text-hover);
+}
+
+@media (min-width: 768px) {
+	.nav {
+		display: flex;
+	}
+	.nav ul {
+		display: flex;
+		text-align: end;
+
+		align-items: center;
+		padding: 0 20px;
+	}
+	.nav ul li {
+		display: inline-block;
+		margin: 0 30px;
+	}
+	p {
+		max-width: 80ch;
+	}
+	body {
+		margin: 0 auto;
+	}
+}
+
+/* top section */
+
+.wrapper {
+	background-image: url(/public/img/francis.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+
+.top-section {
+	/* opacity: 0.7; */
+	padding: 1em 1em;
+	color: var(--clr-text-light);
+}
+
+.upper-p {
+	color: var(--clr-a-text-accent);
+	max-width: 80ch;
+}
+
+/* time and date */
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	text-align: center;
+}
+
+.display-date {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding-top: 6px;
+}
+
+.display-time {
+	display: flex;
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding: 6px 20px;
+	border-radius: 5px;
+	transition: ease-in-out 0.1s;
+	transition-property: background, box-shadow, color;
+	-webkit-box-reflect: below 2px
+		linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+}
+
+.display-time:hover {
+	background: #ffd868;
+	box-shadow: 0 0 30px#ffd868;
+	color: #272727;
+	cursor: pointer;
+}
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* section area */
+.bottom-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 10px;
+	padding: 1em 1em;
+}
+
+/* footer */
+.footer-container {
+	font-size: 0.75rem;
+	font-weight: lighter;
+	margin-top: 20px;
+	background: var(--clr-background-dark);
+	border-radius: 0 0 8px 8px;
+}
+
+/* more-mining page */
+.more-mining {
+	color: #272727;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* about me page */
+.about-me {
+	max-width: 900px;
+	padding: 10px 20px;
+}
+.my-img {
+	width: 150px;
+	border-radius: 50%;
+}
+.my-site {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		'my-h2 my-h2 my-h2 my-h2'
+		'img text1 text1 text1'
+		'img text2 text2 text2';
+	gap: 10px;
+	padding-bottom: 3em;
+}
+.my-h2 {
+	grid-area: my-h2;
+	color: var(--clr-background-dark);
+}
+.img {
+	grid-area: img;
+}
+.text1 {
+	grid-area: text1;
+}
+.text2 {
+	grid-area: text2;
+}
+.more-h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-me-date {
+	color: var(--clr-heading);
+}

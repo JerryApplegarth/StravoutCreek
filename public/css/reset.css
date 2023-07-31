@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+* {
+	--clr-background-light: #f6ecdd;
+	--clr-background-dark: #3c382c;
+	--clr-background-med: #9f9f8a;
+	--clr-text-dark: #8c8e99;
+	--clr-text-light: #f0e7e7;
+	--clr-a-text-hover: #f13d0f;
+	--clr-a-text: #e18131;
+	--clr-a-text-accent: #f47309;
+	--clr-heading: #e2aa1a;
+}
+
+html {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	color-scheme: dark light;
+	line-height: 1.6;
+}
+h1 {
+	color: var(--clr-background-dark);
+	font-size: 2.5rem;
+}
+h2 {
+	color: var(--clr-background-dark);
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1rem;
+}
+h1,
+h2,
+h3 {
+	color: var(--clr-heading);
+	font-weight: bold;
+}
+
+h1.dark,
+h2.dark,
+h3.dark {
+	color: var(--clr-heading);
+}
+body {
+	background: var(--clr-background-light);
+	color: var(--clr-text-dark);
+	transition: background 0.2s linear;
+}
+body.dark {
+	background: var(--clr-background-dark);
+	color: var(--clr-text-light);
+}
+
+a {
+	color: var(--clr-a-text);
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: var(--clr-a-text-hover);
+	text-decoration: underline;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.text {
+	text-align: center;
+	width: 80px;
+}
+.label {
+	background: #7a7575;
+	display: flex;
+	width: 50px;
+	height: 26px;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+}
+.ball {
+	position: absolute;
+	background: #dbb8b8;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+.fa-sun {
+	color: #f3af42;
+}
+.fa-moon {
+	color: #ffdd56;
+}
+.checkbox {
+	position: absolute;
+	opacity: 0;
+}
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+.toggle {
+	min-height: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: center;
+	margin-right: 20px;
+}
+ul {
+	list-style: none;
+}
+
+ol {
+	padding-left: 2em;
+}
+
+img,
+video,
+picture,
+audio,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+text {
+	font: inherit;
+}
