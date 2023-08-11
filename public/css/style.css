@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css2?family=Lato&display=swap);
 *,
 *::after,
 *::before {
@@ -50,21 +49,10 @@ h3 {
   font-weight: bold;
 }
 
-h1.dark,
-h2.dark,
-h3.dark {
-  color: var(--clr-heading);
-}
-
 body {
   background: var(--clr-background-light);
   color: var(--clr-text-dark);
   transition: background 0.2s linear;
-}
-
-body.dark {
-  background: var(--clr-background-dark);
-  color: var(--clr-text-light);
 }
 
 a {
@@ -79,8 +67,12 @@ a:focus {
 }
 
 .header {
+  margin-top: 10px;
+}
+
+.header__ul {
+  list-style: none;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -99,70 +91,6 @@ a:focus {
   justify-content: space-between;
   padding: 5px;
   position: relative;
-}
-
-.ball {
-  position: absolute;
-  background: #dbb8b8;
-  top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
-
-.fa-sun {
-  color: #f3af42;
-}
-
-.fa-moon {
-  color: #ffdd56;
-}
-
-.checkbox {
-  position: absolute;
-  opacity: 0;
-}
-
-.checkbox:checked + .label .ball {
-  transform: translateX(24px);
-}
-
-.toggle {
-  min-height: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: center;
-  margin-right: 20px;
-}
-
-ul {
-  list-style: none;
-}
-
-ol {
-  padding-left: 2em;
-}
-
-img,
-video,
-picture,
-audio,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-text {
-  font: inherit;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 900px;
 }
 
 .btn-first-section {
@@ -205,7 +133,7 @@ body {
   background-image: url(/public/img/francis.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 700px;
 }
 
 .top-section {
