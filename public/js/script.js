@@ -1,7 +1,3 @@
-// import data
-import { username } from './data.js';
-console.log(username);
-
 // light and dark mode
 const checkbox = document.getElementById('checkbox');
 const h1 = document.querySelector('h1');

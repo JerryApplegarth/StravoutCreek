@@ -1,0 +1,11 @@
+{
+  "name": "stravoutcreek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch public/sass/style.scss public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
