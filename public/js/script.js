@@ -1,15 +1,8 @@
 // light and dark mode
-const checkbox = document.getElementById('checkbox');
+
 const h1 = document.querySelector('h1');
 const h2 = document.querySelector('h2');
 const h3 = document.querySelector('h3');
-
-checkbox.addEventListener('click', () => {
-	document.body.classList.toggle('dark');
-	h1.classList.toggle('dark');
-	h2.classList.toggle('dark');
-	h3.classList.toggle('dark');
-});
 
 // date and time
 const displayTime = document.querySelector('.display-time');
